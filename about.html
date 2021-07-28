@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Solar Solutions - About Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Solar Solution</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Solar Panels</a></li>
+                            <li><a class="dropdown-item" href="#">Inverter/UPS</a></li>
+                            <li><a class="dropdown-item" href="#">Batteries</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2 ">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!-- LOG IN trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Log in to your Account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Log In</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- SIGN UP trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Create new Account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="cexampleInputPassword1">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row featurette my-4 mx-4 d-flex justify-content-center align-items-center ">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading d-flex justify-content-center"><strong> Solar Solutions</strong> <span
+                    class="text-muted"></span></h2>
+            <p class="lead">Solar solutions is one of the leading photovoltaic distributors worldwide. The owner-managed
+                and self-financed company offers a wide range of products for PV installers: solar modules, inverters,
+                photovoltaic mounting systems, self-consumption systems, e-mobility, PV installation monitoring, and
+                accessories. Solar Trade attaches great importance to providing its customers and project partners with
+                sound advice and high product quality. Only high-quality components are included in the photovoltaic
+                wholesaler’s product range. The portfolio includes solar modules from the following manufacturers:
+                Jinko, Trina, Longi, Canadian, Znshine, JA Solar, Max Power, and many more. Brands for the areas of
+                inverters, optimization, storage solutions, and e-mobility: Fronius, SMA, Sungrow, Inverex, Growatt,
+                Voltronic, INVT, and many more.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" src="img/blog1.jpg
+							" alt="product.jpg">
+
+
+        </div>
+    </div>
+    <div class="row featurette my-4 mx-4 d-flex justify-content-center align-items-center ">
+        <div class="col-md-7">
+            <h2 class="featurette-heading d-flex justify-content-center"><strong> Our Mission</strong> <span
+                    class="text-muted"></span></h2>
+            <p class="lead">Contributing to this game-changing economic growth with our top expertise in green energy
+                and PV, leveraging on our ability to operate at the crossroads of industry, technology and finance.
+                Advancing this business by satisfying our consumers and generating measurable value for them.
+                Progressing with the large-scale utilization green energy and PV with our entrepreneurial push, engaging
+                our own expertise and joining hands, as well as providing information to local stakeholders for the
+                implementation of PV initiatives in selected emerging markets.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" src="img/blog2.jpg
+							" alt="product.jpg">
+
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
